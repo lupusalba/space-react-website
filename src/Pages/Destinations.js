@@ -1,5 +1,9 @@
 import Navigation from "../Components/Navigation"
 import data from '../data'
+import Mars from "../Images/destination/image-mars.png"
+import Moon from "../Images/destination/image-moon.png"
+import Titan from "../Images/destination/image-titan.png"
+import Europa from "../Images/destination/image-europa.png"
 
 
 const changeData = (e) => {
@@ -17,7 +21,21 @@ const changeData = (e) => {
   destinationDescription.innerHTML = data[0]["destinations"][newId].description;
   destinationDistance.innerHTML = data[0]["destinations"][newId].distance;
   destinationETA.innerHTML = data[0]["destinations"][newId].travel;
-  destImage.src =  data[0]["destinations"][newId]["images"]["png"];
+  // destImage.src =  data[0]["destinations"][`${newId}`]["images"]["png"]
+  
+console.log(newId)
+  if ( newId === 0 ){
+    destImage.src = Moon
+  } else if  ( newId == 1 ) {
+    destImage.src = Mars
+  } else if  ( newId == 2 ) {
+    destImage.src = Europa
+  } else if  ( newId == 3 ) {
+    destImage.src = Titan
+  } else {
+    destImage.src = Moon
+  }
+  console.log(destImage)
 }
 
 
@@ -43,7 +61,7 @@ const Destinations = () => {
           <div className="contentContainer">
 
             <div id="destinationImageContainer" className="contentItem">
-              <img id="destImage" src="../Images/destination/image-mars.png" alt="destination image" className="destinationImage" />
+              <img id="destImage" src={Moon} alt="destination image" className="destinationImage" />
             </div>
 
 
