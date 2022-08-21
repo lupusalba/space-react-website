@@ -33,9 +33,9 @@ function changeData(e) {
 
 const Technology = () => {
   return (
-    <div id="technologyPage desktopTechnologyWrapper">
-      <Navigation />
+    <div id="desktopTechnologyWrapper">
 
+      <Navigation />
       <div id="desktopTechnology">
 
         <div className="subtitle">

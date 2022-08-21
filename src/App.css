@@ -357,6 +357,7 @@ hr {
 
 #crewWrapper {
   background-image: url('./Images/crew/background-crew-desktop.jpg');
+  background-position: center center;
 }
 
 #textCrewContainer {
@@ -516,8 +517,7 @@ img#imageCrew {
   align-content: center; 
   justify-items: center; 
   align-items: center; 
-
-  margin-top: 200px;
+  padding-top: 100px;
 }
 
 #technologyNav {

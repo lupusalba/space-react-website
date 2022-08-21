@@ -21,7 +21,6 @@ const changeData = (e) => {
   destinationDescription.innerHTML = data[0]["destinations"][newId].description;
   destinationDistance.innerHTML = data[0]["destinations"][newId].distance;
   destinationETA.innerHTML = data[0]["destinations"][newId].travel;
-  // destImage.src =  data[0]["destinations"][`${newId}`]["images"]["png"]
   
 console.log(newId)
   if ( newId === 0 ){

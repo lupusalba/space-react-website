@@ -36,13 +36,13 @@ const changeData = (e) => {
 
 const Crew = () => {
   return (
-    <div>
-      <Navigation />
+    <div id="crewWrapper">
       <div id="desktopCrew">
+        <Navigation />
 
 
         <div className="subtitle">
-          <span class="darkened">02</span>
+          <span className="darkened">02</span>
           meet your crew
         </div>
 
@@ -64,10 +64,10 @@ const Crew = () => {
 
             <div id="crewNav">
               <ul>
-                <li id="0" onClick={changeData}><span class="bullet"></span></li>
-                <li id="1" onClick={changeData}><span class="bullet"></span></li>
-                <li id="2" onClick={changeData}><span class="bullet"></span></li>
-                <li id="3" onClick={changeData}><span class="bullet"></span></li>
+                <li id="0" onClick={changeData}><span className="bullet"></span></li>
+                <li id="1" onClick={changeData}><span className="bullet"></span></li>
+                <li id="2" onClick={changeData}><span className="bullet"></span></li>
+                <li id="3" onClick={changeData}><span className="bullet"></span></li>
               </ul>
             </div>
           </div>
@@ -78,9 +78,8 @@ const Crew = () => {
           </div>
 
         </div>
-
-
       </div>
+
     </div>
   )
 }
