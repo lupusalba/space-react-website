@@ -1,38 +1,634 @@
-.App {
-  text-align: center;
+body {
+  box-sizing: border-box;
+  font-family: "Barlow Condensed", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+ul {
+  list-style: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.wrapper {
   min-height: 100vh;
+   height: 100%;
+  width: 100vw;
+  min-width: 100%;
+  position: relative;
+  background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+color: #fff;
+margin: 0 auto;
+}
+
+.container {
+  height: 100vh;
+  min-height: 100%;
+  position: relative;
+}
+
+/****************************
+    header nav
+****************************/
+#menu {
+  height: 96px;
+  width: 100%;
+  color: #fff;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: flex-end;
   align-items: center;
+  z-index: 11111111111;
+
+  position: absolute;
+}
+
+.navigation {
+  width: 830px;
+  height: 96px;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 30px;
+  backdrop-filter: blur(10px);
+  gap: 30px;
+  text-transform: uppercase;
+}
+
+.navigation li {
+  display: inline-block;
+}
+
+.navigation li:first-child {
+  margin-left: 144px;
+}
+.navigation li:last-child {
+  margin-right: 144px;
+}
+
+.navigation li a {
+  color: #fff;
+}
+
+.navigation li a:hover {
+  font-weight: bold;
+}
+
+.bolded {
+  font-weight: bold;
+}
+
+.logo {
+  height: 48px;
+  width: 48px;
+  /* position: absolute;
+  left: 55px; */
+}
+
+.menuHr {
+  /* position:absolute;
+  top: 80px;
+  left: 165px; */
+  border: 1px solid #979797;
+  width: 80%;
+}
+
+/****************************
+    contents
+****************************/
+
+#desktopHome {
+  background-image: url('./Images/home/background-home-desktop.jpg');
+  background-position: right center;
+}
+.textContainer {
+  width: 445px;
+  justify-self: end;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-self: center;
 }
 
-.App-link {
-  color: #61dafb;
+.beforeTitle {
+  font-size: 1.3em /*28px;*/;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-family: "Barlow Condensed";
+  font-style: normal;
+  font-weight: normal;
+  line-height: 34px;
+  letter-spacing: 4.725px;
+  color: #d0d6f9;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.title {
+  font-family: "Bellefair";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10em /*150px*/;
+  line-height: 172px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.descriptionContainer {
+  color: #d0d6f9;
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.5em/* 18px*/;
+  line-height: 32px;
+}
+
+.btnWhiteBig {
+  justify-self: center;
+  justify-content: center;
+  align-self: center;
+
+  width: 274px;
+  height: 274px;
+  border-radius: 100%;
+  background-color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  border: 1px solid #fff;
+  font-family: "Bellefair";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2em/*32px*/;
+  line-height: 37px;
+  letter-spacing: 2px;
+  box-shadow: 0;
+  z-index: 5000;
+}
+
+.btnWhiteBig:active {
+  box-shadow: 0 0 30px #000 inset;
+  border: 1px solid #000;
+}
+
+/****************************************************************
+                DESTINATION style
+****************************************************************/
+
+#destinationWrapper {
+  background-image: url("./Images/destination/background-destination-desktop.jpg");
+}
+/* 
+#desktopCrew,
+#desktopTechnology {
+  width: 100%;
+  height: 100vh;
+  min-height: 100%;
+  margin: 0 auto;
+  color: #fff;
+  position: relative;
+} */
+
+.subtitle {
+  position: absolute;
+  top: 20%;
+  left: 0;
+  height: 34px;
+  width: auto;
+  margin-left: 10%;
+  color: #fff;
+  display: inline;
+  font-family: "Barlow Condensed";
+  font-style: Bold;
+  font-size: 28px;
+  text-align: left;
+  vertical-align: Top;
+  letter-spacing: 4.72px;
+}
+
+
+
+.subtitle span {
+  opacity: 0.25;
+  padding-right: 25px;
+}
+*/
+
+#destinationWrapper {
+  background-image: url("./Images/destination/background-destination-desktop.jpg");
+}
+
+img.destinationImage {
+  height: 445px;
+  width: 445px;
+  opacity: 0.3;
+}
+
+img.destinationImage:hover {
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+.destinationMenuContainer {
+  text-align: left;
+  width: auto;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+#destinationMenu {
+  list-style: none;
+}
+
+#destinationMenu li {
+  display: inline;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: left;
+  border: 2px solid transparent;
+}
+
+.textDestinationContainer {
+  width: 445px;
+  justify-self: start;
+  justify-content: center;
+  align-self: center;
+}
+
+#destinationTitle {
+  color: #fff;
+  font-family: "Bellefair";
+  font-style: normal;
+  font-size: 100px;
+  line-height: 115px;
+  text-transform: uppercase;
+}
+
+#destinationDescription {
+  color: #fff;
+  font-family: "Barlow";
+  font-style: normal;
+  font-size: 18px;
+  line-height: 32px;
+  line-height: 148%;
+}
+
+hr {
+    border: 1px solid #383B4B;
+}
+
+#destinationData {
+    color: #fff;
+}
+
+#destinationDistance,
+#destinationETA {
+  display: inline;
+  width: 50%;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+
+
+.contentContainer {
+  height: 100%;
+  width: 100%;
+  padding-top: 300px;
+  display: grid; 
+  grid-auto-flow: column dense; 
+  grid-auto-rows: 1fr; 
+  grid-template-columns: 1fr 1fr; 
+  grid-template-rows: 1fr; 
+  gap: 30px; 
+  grid-template-areas:  
+    ". ."; 
+  align-content: center; 
+  justify-items: center; 
+  align-items: center; 
+
+}
+
+#destinationImageContainer {
+  justify-self: end;
+  justify-content: center;
+  align-self: center;
+
+}
+
+.textDestinationContainer {
+  justify-self: start;
+  justify-content: center;
+  width: 500px;
+  align-self:center;
+
+}
+
+
+
+
+/********************************************
+*******************************************
+***************************************
+      new css destination
+      ********
+*********************************/
+
+.flexContainer {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  margin: 0 10%;
+}
+
+.flexItem {
+  flex: 1;
+  align-self: center;
+  gap: 50px;
+}
+
+#desktopDestination {
+  width: 100%;
+  height: 100%;
+}
+
+
+/**********************************
+      CREW
+**********/
+
+#crewWrapper {
+  background-image: url('./Images/crew/background-crew-desktop.jpg');
+}
+
+#textCrewContainer {
+  justify-self: end;
+  justify-content: center;
+  width: 550px;
+  align-self:center; 
+}
+
+#crewRole {
+  font-family: "Bellefair";
+  font-size: 32px;
+  opacity: 0.5;
+  text-transform: uppercase;
+
+ 
+}
+
+#crewName {
+  font-size: 56px;
+  font-family: "Bellefair";
+  text-transform: uppercase;
+  margin: 0px;
+}
+
+
+#crewBio {
+  max-width:450px;
+  width: auto;
+  color: #D0D6F9;
+  font-size: 18px;
+  font-family: "Barlow";
+  display:inline-block;
+}
+
+  #imageCrewContainer {
+  min-height: 300px;
+  height: auto;
+  width: 350px;
+
+  justify-self: start;
+  justify-content: center;
+  align-self: center;
+
+}
+
+img#imageCrew {
+  height: 710px;
+  width: auto;
+}
+
+#crewNav {
+  position: relative;
+}
+
+#crewNav ul {
+  /* position: absolute;
+  bottom: -250px; */
+  
+  list-style: none;
+  margin-top: 150px;
+}
+
+#crewNav ul li {
+  display: inline-block;
+  background: #fff;
+  height: 15px;
+  width: 15px;
+  margin-right: 15px;
+  border-radius: 100%;
+}
+
+
+/********************************
+        TECHNOLOGY
+********************************/
+
+#desktopTechnologyWrapper {
+  background-image: url('./Images/technology/background-technology-desktop.jpg');
+  height: 100%;
+  min-height: 100vh;
+}
+
+#textTechnologyContainer {
+  max-width: 470px;
+  width: auto;
+  height: 303px;
+}
+
+#technologySubtitle {
+  font-family: "Barlow Condensed";
+  font-size: 16px;
+  color: #D0D6F9;
+}
+
+#technologyTitle {
+  font-family: "Bellefair";
+  font-size: 3.5em; /*56px*/
+  width: 500px;
+  text-transform: uppercase;
+}
+
+#technologyDescription {
+  font-family: "Barlow";
+  font-size: 1.5em/*18px*/;
+  color: #D0D6F9;
+}
+
+#technologyNav {
+  margin:0;
+  padding: 0;
+}
+
+#technologyNav button {
+  height: 80px;
+  width: 80px;
+  border-radius: 100%;
+  border: 1px solid #fff;
+  background: transparent;
+  color: #fff;
+  display: block;
+  margin: 0 0 32px 0;
+  padding: 0;
+  font-family: 'Bellefair';
+  font-size: 32px;
+}
+
+#technologyNav button:hover {
+  background: #fff;
+  color: #000;
+  transition: all .5s;
+}
+
+#imageTechnologyContainer {
+  height: 527px;
+  width: 515px;
+}
+
+#imageTechnology {
+  height: 100%;
+  width: 100%;
+}
+
+
+.contentContainerTech {
+  min-height: 100%;
+  width: 100%;
+
+  display: grid; 
+  grid-auto-flow: column dense; 
+  /* grid-auto-rows: 1fr;  */
+  grid-template-columns: 100px 1fr 1fr;
+  grid-template-rows: 1fr; 
+  gap: 30px; 
+  grid-template-areas:  
+    ". ."; 
+  align-content: center; 
+  justify-items: center; 
+  align-items: center; 
+
+  margin-top: 200px;
+}
+
+#technologyNav {
+  justify-self: end;
+  justify-content: center;
+  align-self: center;
+}
+
+#textTechnologyContainer {
+  justify-self: start;
+  justify-content: center;
+  align-self: center;
+
+  
+}
+
+#imageTechnologyContainer {
+  justify-self: start;
+  justify-content: center;
+  width: 500px;
+  align-self:center;
+
+}
+
+
+
+
+
+/*****************
+        NAV
+*****************/
+/* The Overlay (background) */
+.overlay {
+  /* Height & width depends on how you want to reveal the overlay (see JS below) */
+  height: 100%;
+  width: 0;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  background-color: rgb(0, 0, 0); /* Black fallback color */
+  background-color: rgba(0, 0, 0, 0.9); /* Black w/opacity */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+  position: relative;
+  top: 25%; /* 25% from the top */
+  width: 100%; /* 100% width */
+  text-align: center; /* Centered text/links */
+  margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block; /* Display block instead of inline */
+  transition: 0.3s; /* Transition effects on hover (color) */
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover,
+.overlay a:focus {
+  color: #f1f1f1;
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+  .overlay a {
+    font-size: 20px;
   }
-  to {
-    transform: rotate(360deg);
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
   }
 }
+
+#navIcon {
+    position: fixed;
+    padding: 50px;
+    border-radius: 100%;
+    z-index: 1111111111111;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    
+}
+
+#navIcon img {
+  box-sizing: content-box;
+    border: 1px solid;
+    padding: 10px;
+    border-radius: 100%;
+}
+/**************
+**************/

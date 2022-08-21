@@ -1,0 +1,450 @@
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+  .container {
+    min-width: 70vw;
+    margin: 0 15vw;
+  }
+  .textContainer {
+    width: 445px;
+    justify-self: end;
+  }
+  
+  #myNav,
+  #navIcon {
+    display: none;
+  }
+}
+
+/* 
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+  */
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  body {
+    overflow: visible;
+  }
+  #myNav,
+  #navIcon {
+    display: none;
+  }
+  .container {
+    height: 100%;
+    min-width: 70vw;
+    margin: 0 15vw;
+  }
+  .textContainer {
+    width: 445px;
+    justify-self: center;
+  }
+
+  .contentContainer {
+    grid-auto-rows: 2fr; 
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  }
+  .textDestinationContainer {
+    justify-self: center;
+    width: 500px;
+    text-align: center;
+  }
+  #destinationImageContainer {
+    justify-self: center;
+  }
+  #textCrewContainer {
+    justify-self: center;
+    width: 550px;
+  }
+  #imageCrewContainer {
+    justify-self: center;
+  }
+  .contentContainerTech {
+    grid-auto-rows: 1fr; 
+    grid-template-columns: 1fr; 
+    grid-template-rows: 100px 1fr 1fr; 
+    margin-top: 150px;
+  }
+
+  #technologyNav {
+    justify-self: center;
+  }
+  #technologyNav button {
+    display: inline;
+    margin: 0 auto;
+  }
+  #textTechnologyContainer,
+  #imageTechnologyContainer{
+    justify-self: center;
+  }
+  .destinationMenuContainer {
+    text-align: center;
+  }
+  #technologyTitle,#textTechnologyContainer {
+    width: 80%;
+  }
+  #textTechnologyContainer{
+    margin: 50px auto;
+  }
+
+  #imageTechnologyContainer {
+    width: 80%;
+    height: auto;
+    margin: auto 10%;
+  }
+}
+
+/* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+  */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  body {
+    overflow: visible;
+  }
+  #myNav,
+  #navIcon {
+    display: block;
+  }
+  #menu {
+    display: none;
+  }
+  .container {
+    height: 100%;
+    min-width: 80vw;
+    margin: 0 10vw;
+  }
+  .textContainer {
+    width: 445px;
+    justify-self: center;
+  }
+
+  .contentContainer {
+    grid-auto-rows: 2fr; 
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr; 
+  }
+  .textDestinationContainer {
+    justify-self: center;
+    justify-content: center;
+    width: 500px;
+    align-self:center;
+  }
+  .textDestinationContainer {
+    justify-self: center;
+    width: 500px;
+    text-align: center;
+  }
+  #destinationImageContainer {
+    justify-self: center;
+  }
+  #textCrewContainer {
+    justify-self: center;
+    width: 70%;
+    margin: auto 15%;
+  }
+  #imageCrewContainer {
+    justify-self: center;
+  }
+  .contentContainerTech {
+    grid-auto-rows: 1fr; 
+    grid-template-columns: 1fr; 
+    grid-template-rows: 100px 1fr 1fr; 
+    margin-top: 150px;
+  }
+
+  #technologyNav {
+    justify-self: center;
+    margin-bottom: 90px;
+  }
+  #technologyNav button {
+    display: inline;
+    margin: 0 auto;
+  }
+  #textTechnologyContainer,
+  #imageTechnologyContainer{
+    justify-self: center;
+  }
+  .destinationMenuContainer {
+    text-align: center;
+  }
+  #technologyTitle,#textTechnologyContainer {
+    width: 80%;
+  }
+  #textTechnologyContainer{
+    margin: 50px auto;
+  }
+  #imageTechnologyContainer {
+    width: 80%;
+    height: auto;
+    margin: auto 10%;
+  }
+}
+
+/* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  
+  body {
+    overflow: visible;
+  }
+  #myNav,
+  #navIcon {
+    display: block;
+  }
+  #menu {
+    display: none;
+  }
+  .container {
+    height: 100%;
+    min-width: 80vw;
+    margin: 0 10vw;
+  }
+  .textContainer {
+    width: 445px;
+    justify-self: center;
+    text-align: center;
+  }
+
+  .contentContainer {
+    grid-auto-rows: 2fr; 
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr; 
+  }
+  .textDestinationContainer {
+    justify-self: center;
+    width: 500px;
+    text-align: center;
+  }
+  #destinationImageContainer {
+    justify-self: center;
+  }
+  #textCrewContainer {
+    justify-self: center;
+    width: 80%;
+    margin: auto 10%;
+  }
+  #imageCrewContainer {
+    justify-self: center;
+  }
+  .contentContainerTech {
+    grid-auto-rows: 1fr; 
+    grid-template-columns: 1fr; 
+    grid-template-rows: 100px 1fr 1fr; 
+    margin-top: 150px;
+  }
+
+  #technologyNav {
+    justify-self: center;
+    margin-bottom: 90px;
+  }
+  #technologyNav button {
+    display: inline;
+    margin: 0 auto;
+  }
+  #textTechnologyContainer,
+  #imageTechnologyContainer{
+    justify-self: center;
+  }
+  .destinationMenuContainer {
+    text-align: center;
+  }
+  #technologyTitle,#textTechnologyContainer {
+    width: 90%;
+  }
+  #textTechnologyContainer{
+    margin: 50px 5%;
+  }
+  #imageTechnologyContainer {
+    width: 90%;
+    height: auto;
+    margin: auto 5%;
+  }
+}
+
+/* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+
+@media (min-width: 481px) and (max-width: 767px) {
+  body {
+    overflow: visible;
+  }
+  #myNav,
+  #navIcon {
+    display: block;
+  }
+  #menu {
+    display: none;
+  }
+  .container {
+    height: 100%;
+    min-width: 90vw;
+    margin: 0 5vw;
+  }
+  .textContainer {
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+    justify-self: center;
+    text-align: center;
+  }
+
+  .title {
+    font-size: 7em;
+  }
+
+  .contentContainer {
+    grid-auto-rows: 2fr; 
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr; 
+  }
+  .textDestinationContainer {
+    justify-self: center;
+    width: 80%;
+    text-align: center;
+    margin: auto 10%;
+  }
+  #destinationImageContainer {
+    justify-self: center;
+  }
+  #textCrewContainer {
+    justify-self: center;
+    width: 90%;
+    margin: auto 5%;
+  }
+  #imageCrewContainer {
+    justify-self: center;
+  }
+  .contentContainerTech {
+    grid-auto-rows: 1fr; 
+    grid-template-columns: 1fr; 
+    grid-template-rows: 100px 1fr 1fr; 
+    margin-top: 150px;
+  }
+
+  #technologyNav {
+    justify-self: center;
+    margin-bottom: 90px;
+  }
+  #technologyNav button {
+    display: inline;
+    margin: 0 auto;
+  }
+  #textTechnologyContainer,
+  #imageTechnologyContainer{
+    justify-self: center;
+  }
+  .destinationMenuContainer {
+    text-align: center;
+  }
+  #technologyTitle,#textTechnologyContainer {
+    width: 90%;
+  }
+  #textTechnologyContainer{
+    margin: 50px 5%;
+  }
+  #imageTechnologyContainer {
+    width: 90%;
+    height: auto;
+    margin: auto 5%;
+  }
+}
+
+/* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+
+@media (min-width: 320px) and (max-width: 480px) {
+  body {
+    overflow: visible;
+  }
+  #myNav,
+  #navIcon {
+    display: block;
+  }
+  #menu {
+    display: none;
+  }
+  .container {
+    height: 100%;
+    min-width: 90vw;
+    margin: 0 5vw;
+  }
+  .textContainer {
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+    justify-self: center;
+    text-align: center;
+  }
+
+  .title {
+    font-size: 7em;
+  }
+  .contentContainer {
+    grid-auto-rows: 2fr; 
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr; 
+  }
+  .textDestinationContainer {
+    justify-self: center;
+    width: 90%;
+    text-align: center;
+    margin: auto 5%;
+  }
+  #destinationImageContainer {
+    justify-self: center;
+  }
+  #textCrewContainer {
+    justify-self: center;
+    width: 90%;
+    margin: auto 5%;
+  }
+  #imageCrewContainer {
+    justify-self: center;
+  }
+  .contentContainerTech {
+    grid-auto-rows: 1fr; 
+    grid-template-columns: 1fr; 
+    grid-template-rows: 100px 1fr 1fr; 
+    margin-top: 150px;
+  }
+
+  #technologyNav {
+    justify-self: center;
+    
+    margin-bottom: 90px;
+  }
+  #technologyNav button {
+    display: inline;
+    margin: 0 auto;
+  }
+  #textTechnologyContainer,
+  #imageTechnologyContainer{
+    justify-self: center;
+  }
+  .destinationMenuContainer {
+    text-align: center;
+  }
+  #technologyTitle,#textTechnologyContainer {
+    width: 90%;
+  }
+  #textTechnologyContainer{
+    margin: 50px 5%;
+  }
+  #imageTechnologyContainer {
+    width: 90%;
+    height: auto;
+    margin: auto 5%;
+  }
+}
