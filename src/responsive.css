@@ -58,16 +58,23 @@
   #textCrewContainer {
     justify-self: center;
     width: 550px;
+    margin-top: -200px;
   }
   #imageCrewContainer {
     justify-self: center;
+    margin-top: -200px;
   }
+  #crewNav ul {
+    margin-top: 50px;
+}
   .contentContainerTech {
     grid-auto-rows: 1fr; 
     grid-template-columns: 1fr; 
     grid-template-rows: 100px 1fr 1fr; 
     margin-top: 150px;
   }
+
+  #desktopTechnology { margin-top: -150px }
 
   #technologyNav {
     justify-self: center;
@@ -87,13 +94,13 @@
     width: 80%;
   }
   #textTechnologyContainer{
-    margin: 50px auto;
+    margin: 50px auto auto auto;
   }
 
   #imageTechnologyContainer {
-    width: 80%;
+    width: auto;
     height: auto;
-    margin: auto 10%;
+    margin: 0px auto 0 auto;
   }
 }
 
@@ -145,7 +152,7 @@
   #textCrewContainer {
     justify-self: center;
     width: 70%;
-    margin: auto 15%;
+    margin: -50px auto auto auto;
   }
   #imageCrewContainer {
     justify-self: center;
@@ -154,12 +161,12 @@
     grid-auto-rows: 1fr; 
     grid-template-columns: 1fr; 
     grid-template-rows: 100px 1fr 1fr; 
-    margin-top: 150px;
+    
   }
 
   #technologyNav {
     justify-self: center;
-    margin-bottom: 90px;
+    margin-bottom: -50px;
   }
   #technologyNav button {
     display: inline;
@@ -176,13 +183,15 @@
     width: 80%;
   }
   #textTechnologyContainer{
-    margin: 50px auto;
+    margin: 50px auto auto auto;
   }
   #imageTechnologyContainer {
-    width: 80%;
+    width: auto;
     height: auto;
     margin: auto 10%;
   }
+  #crewNav ul { margin-top: 50px; }
+  #imageCrewContainer { margin-top: -200px; }
 }
 
 /* 
@@ -229,21 +238,22 @@
   #textCrewContainer {
     justify-self: center;
     width: 80%;
-    margin: auto 10%;
+    margin: -50px auto auto auto;
   }
   #imageCrewContainer {
     justify-self: center;
+    margin-top: -230px;
   }
   .contentContainerTech {
     grid-auto-rows: 1fr; 
     grid-template-columns: 1fr; 
     grid-template-rows: 100px 1fr 1fr; 
-    margin-top: 150px;
+    
   }
 
   #technologyNav {
     justify-self: center;
-    margin-bottom: 90px;
+    margin-bottom: -50px;
   }
   #technologyNav button {
     display: inline;
@@ -252,6 +262,7 @@
   #textTechnologyContainer,
   #imageTechnologyContainer{
     justify-self: center;
+    margin-top: -200px;
   }
   .destinationMenuContainer {
     text-align: center;
@@ -260,12 +271,15 @@
     width: 90%;
   }
   #textTechnologyContainer{
-    margin: 50px 5%;
+    margin: 50px auto auto auto;
   }
   #imageTechnologyContainer {
-    width: 90%;
+    width: auto;
     height: auto;
     margin: auto 5%;
+  }
+  #crewNav ul {
+    margin-top: 50px;
   }
 }
 
@@ -319,21 +333,22 @@
   #textCrewContainer {
     justify-self: center;
     width: 90%;
-    margin: auto 5%;
+    margin: 100px auto auto auto;
   }
+  #crewNav ul { margin-top: 50px; }
   #imageCrewContainer {
     justify-self: center;
+    margin-top: -150px;
   }
   .contentContainerTech {
     grid-auto-rows: 1fr; 
     grid-template-columns: 1fr; 
     grid-template-rows: 100px 1fr 1fr; 
-    margin-top: 150px;
   }
 
   #technologyNav {
     justify-self: center;
-    margin-bottom: 90px;
+    margin-bottom: -50px;
   }
   #technologyNav button {
     display: inline;
@@ -353,7 +368,7 @@
     margin: 50px 5%;
   }
   #imageTechnologyContainer {
-    width: 90%;
+    width: auto;
     height: auto;
     margin: auto 5%;
   }
@@ -423,7 +438,7 @@
   #technologyNav {
     justify-self: center;
     
-    margin-bottom: 90px;
+    margin-bottom: -50px;
   }
   #technologyNav button {
     display: inline;
@@ -447,4 +462,5 @@
     height: auto;
     margin: auto 5%;
   }
+  #desktopTechnology { margin-top: -150px; }
 }
