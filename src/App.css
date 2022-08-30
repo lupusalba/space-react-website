@@ -9,15 +9,15 @@ ul {
 
 .wrapper {
   min-height: 100vh;
-   height: 100%;
+  height: 100%;
   width: calc(100vw - 17px);
   min-width: 100%;
   position: relative;
   background-size: cover;
-background-repeat: no-repeat;
-background-position: center;
-color: #fff;
-margin: 0 auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #fff;
+  margin: 0 auto;
 }
 
 .container {
@@ -102,7 +102,7 @@ margin: 0 auto;
 ****************************/
 
 #desktopHome {
-  background-image: url('./Images/home/background-home-desktop.jpg');
+  background-image: url("./Images/home/background-home-desktop.jpg");
   background-position: right center;
 }
 .textContainer {
@@ -139,7 +139,7 @@ margin: 0 auto;
   font-family: "Barlow";
   font-style: normal;
   font-weight: normal;
-  font-size: 1.5em/* 18px*/;
+  font-size: 1.5em /* 18px*/;
   line-height: 32px;
 }
 
@@ -158,22 +158,22 @@ margin: 0 auto;
   font-family: "Bellefair";
   font-style: normal;
   font-weight: normal;
-  font-size: 2em/*32px*/;
+  font-size: 2em /*32px*/;
   line-height: 37px;
   letter-spacing: 2px;
   box-shadow: 0;
   z-index: 5000;
-    color: #0B0D19;
-    box-sizing: content-box;
-    text-decoration: none;
+  color: #0b0d19;
+  box-sizing: content-box;
+  text-decoration: none;
 }
 
 .btnWhiteBig > span {
   display: flex;
-    justify-content: center;
-    height: 272px;
-    align-items: center;
-    align-content: center;
+  justify-content: center;
+  height: 272px;
+  align-items: center;
+  align-content: center;
 }
 
 .btnWhiteBig:hover {
@@ -222,14 +222,10 @@ margin: 0 auto;
   letter-spacing: 4.72px;
 }
 
-
-
 .subtitle span {
   opacity: 0.25;
   padding-right: 25px;
 }
-*/
-
 #destinationWrapper {
   background-image: url("./Images/destination/background-destination-desktop.jpg");
 }
@@ -289,11 +285,11 @@ img.destinationImage:hover {
 }
 
 hr {
-    border: 1px solid #383B4B;
+  border: 1px solid #383b4b;
 }
 
 #destinationData {
-    color: #fff;
+  color: #fff;
 }
 
 #destinationDistance,
@@ -304,43 +300,34 @@ hr {
   font-size: 1.5em;
 }
 
-
-
 .contentContainer {
   height: 100%;
   width: 100%;
   padding-top: 300px;
-  display: grid; 
-  grid-auto-flow: column dense; 
-  grid-auto-rows: 1fr; 
-  grid-template-columns: 1fr 1fr; 
-  grid-template-rows: 1fr; 
-  gap: 30px; 
-  grid-template-areas:  
-    ". ."; 
-  align-content: center; 
-  justify-items: center; 
-  align-items: center; 
-
+  display: grid;
+  grid-auto-flow: column dense;
+  grid-auto-rows: 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 30px;
+  grid-template-areas: ". .";
+  align-content: center;
+  justify-items: center;
+  align-items: center;
 }
 
 #destinationImageContainer {
   justify-self: end;
   justify-content: center;
   align-self: center;
-
 }
 
 .textDestinationContainer {
   justify-self: start;
   justify-content: center;
   width: 500px;
-  align-self:center;
-
+  align-self: center;
 }
-
-
-
 
 /********************************************
 *******************************************
@@ -367,13 +354,12 @@ hr {
   height: 100%;
 }
 
-
 /**********************************
       CREW
 **********/
 
 #crewWrapper {
-  background-image: url('./Images/crew/background-crew-desktop.jpg');
+  background-image: url("./Images/crew/background-crew-desktop.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -383,7 +369,7 @@ hr {
   justify-self: end;
   justify-content: center;
   width: 550px;
-  align-self:center; 
+  align-self: center;
 }
 
 #crewRole {
@@ -402,17 +388,16 @@ hr {
   color: #fff;
 }
 
-
 #crewBio {
-  max-width:450px;
+  max-width: 450px;
   width: auto;
-  color: #D0D6F9;
+  color: #d0d6f9;
   font-size: 18px;
   font-family: "Barlow";
-  display:inline-block;
+  display: inline-block;
 }
 
-  #imageCrewContainer {
+#imageCrewContainer {
   min-height: 300px;
   height: auto;
   width: 350px;
@@ -420,7 +405,6 @@ hr {
   justify-self: start;
   justify-content: center;
   align-self: center;
-
 }
 
 img#imageCrew {
@@ -435,7 +419,7 @@ img#imageCrew {
 #crewNav ul {
   /* position: absolute;
   bottom: -250px; */
-  
+
   list-style: none;
   margin-top: 150px;
 }
@@ -449,13 +433,12 @@ img#imageCrew {
   border-radius: 100%;
 }
 
-
 /********************************
         TECHNOLOGY
 ********************************/
 
 #desktopTechnologyWrapper {
-  background-image: url('./Images/technology/background-technology-desktop.jpg');
+  background-image: url("./Images/technology/background-technology-desktop.jpg");
   height: 100%;
   min-height: 100vh;
   background-repeat: no-repeat;
@@ -471,7 +454,7 @@ img#imageCrew {
 #technologySubtitle {
   font-family: "Barlow Condensed";
   font-size: 16px;
-  color: #D0D6F9;
+  color: #d0d6f9;
 }
 
 #technologyTitle {
@@ -484,12 +467,12 @@ img#imageCrew {
 
 #technologyDescription {
   font-family: "Barlow";
-  font-size: 1.5em/*18px*/;
-  color: #D0D6F9;
+  font-size: 1.5em /*18px*/;
+  color: #d0d6f9;
 }
 
 #technologyNav {
-  margin:0;
+  margin: 0;
   padding: 0;
 }
 
@@ -503,14 +486,14 @@ img#imageCrew {
   display: block;
   margin: 0 0 32px 0;
   padding: 0;
-  font-family: 'Bellefair';
+  font-family: "Bellefair";
   font-size: 32px;
 }
 
 #technologyNav button:hover {
   background: #fff;
   color: #000;
-  transition: all .5s;
+  transition: all 0.5s;
 }
 
 #imageTechnologyContainer {
@@ -523,22 +506,20 @@ img#imageCrew {
   width: 100%;
 }
 
-
 .contentContainerTech {
   min-height: 100%;
   width: 100%;
 
-  display: grid; 
-  grid-auto-flow: column dense; 
+  display: grid;
+  grid-auto-flow: column dense;
   /* grid-auto-rows: 1fr;  */
   grid-template-columns: 100px 1fr 1fr;
-  grid-template-rows: 1fr; 
-  gap: 30px; 
-  grid-template-areas:  
-    ". ."; 
-  align-content: center; 
-  justify-items: center; 
-  align-items: center; 
+  grid-template-rows: 1fr;
+  gap: 30px;
+  grid-template-areas: ". .";
+  align-content: center;
+  justify-items: center;
+  align-items: center;
   padding-top: 200px;
 }
 
@@ -552,21 +533,14 @@ img#imageCrew {
   justify-self: start;
   justify-content: center;
   align-self: center;
-
-  
 }
 
 #imageTechnologyContainer {
   justify-self: start;
   justify-content: center;
   width: 500px;
-  align-self:center;
-
+  align-self: center;
 }
-
-
-
-
 
 /*****************
         NAV
@@ -632,25 +606,22 @@ img#imageCrew {
 }
 
 #navIcon {
-    position: fixed;
-    padding: 50px;
-    border-radius: 100%;
-    z-index: 1111111111111;
-    width: 50px;
-    height: 50px;
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: nowrap;
-    
+  position: fixed;
+  padding: 50px;
+  border-radius: 100%;
+  z-index: 1111111111111;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
 }
 
 #navIcon img {
   box-sizing: content-box;
-    border: 1px solid;
-    padding: 10px;
-    border-radius: 100%;
+  border: 1px solid;
+  padding: 10px;
+  border-radius: 100%;
 }
-/**************
-**************/
