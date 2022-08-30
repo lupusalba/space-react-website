@@ -163,7 +163,17 @@ margin: 0 auto;
   letter-spacing: 2px;
   box-shadow: 0;
   z-index: 5000;
-  box-sizing: content-box;
+    color: #0B0D19;
+    box-sizing: content-box;
+    text-decoration: none;
+}
+
+.btnWhiteBig > span {
+  display: flex;
+    justify-content: center;
+    height: 272px;
+    align-items: center;
+    align-content: center;
 }
 
 .btnWhiteBig:hover {

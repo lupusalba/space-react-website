@@ -25,7 +25,9 @@ const Home = () => {
               because we’ll give you a truly out of this world experience!</div>
           </div>
 
-          <button className="btnWhiteBig">Explore</button>
+          <a href="/destinations" className="btnWhiteBig">
+            <span>Explore</span>
+          </a>
 
 
 
